@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="http://localhost:3000/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    
+    <title>Covaxy Login</title>
+</head>
+<body> 
+
+    <div id="header">
+        <span id="head">Covaxy</span>
+        <a id="home" href="http://localhost:3000/home">Home</a>
+        <a id="about" href="http://localhost:3000/about">About Us</a> 
+        <a id="contact" href="http://localhost:3000/contact">Contact Us</a> 
+        <a id="terms" href="http://localhost:3000/terms">Terms and Condition</a>
+        </div> 
+    
+    <input id="uid" name="uid" type="text" placeholder="Aadhar-ID"/> 
+    
+    <button id="otp" onclick="otp()">Send OTP</button> 
+    
+    <script type="text/javascript">
+    
+    function otp(){
+        var o=new XMLHttpRequest();
+        o.onload=function(){
+           document.getElementById("h").innerHTML=o.responseText;
+        } 
+        o.open('GET',`http://localhost:3000/otp?uid=${document.getElementById('uid').value}`);
+        o.send();
+    }
+    
+    </script>
+    
+</body>
+</html>

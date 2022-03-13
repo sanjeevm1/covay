@@ -1,0 +1,203 @@
+#header{
+    padding: 2%;   
+    background-color: white; 
+    position: absolute;
+    top:0%;
+    left:0%;
+    right:0%;
+}
+
+body{
+    background-color: black;
+}
+
+#login{
+    position:absolute;
+    top:40%;
+    left:40%;
+}
+
+#sign{
+    position:absolute;
+    top:60%;
+    left:40%;
+}
+
+button{
+    background-color:rgba(18,18,230,0.836);
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-color: turquoise;
+    width: 20%;
+    height: 8%; 
+    font-size: medium;
+    cursor: pointer;
+} 
+
+button:hover{
+    transform: scale(1.2);
+}
+
+#title{
+    position:absolute;
+    top:0%;
+    left:70%;
+    padding:85%; 
+    background-color: white;
+}
+
+#head{
+    font-weight: bolder;
+    font-size: 200%; 
+    padding: 1%;
+    position:absolute;
+    top:0%;
+    left:0%;
+    background-color: black; 
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    
+    } 
+
+
+
+
+a{
+    text-decoration: none;
+    font-weight: bolder; 
+    font-size: 50%;
+    padding: 2%;
+    color: black;
+    font-family: 'PT Sans', sans-serif; 
+    letter-spacing: 5px; 
+}
+
+
+#home{
+    
+    font-weight: bolder; 
+    font-size: larger;  
+    margin-left: 5%; 
+    position: absolute; 
+    top:0%;
+    left:4.8%;
+    
+} 
+
+#about{
+
+    font-weight: bolder; 
+    font-size: larger; 
+    margin-left: 5%; 
+    position: absolute; 
+    top:0%;
+    left:15%;
+    
+} 
+
+#contact{
+    
+    font-weight: bolder; 
+    font-size: larger; 
+    margin-left: 5%;
+    position: absolute; 
+    top:0%;
+    left:28%;
+    
+} 
+
+#terms{
+    
+    font-weight: bolder; 
+    font-size: larger; 
+    margin-left: 5%;
+    position: absolute; 
+    top:0%;
+    left:43%;
+    
+} 
+
+a:hover{
+    background-color: black;
+    color:white;
+}
+
+input{
+    padding: 1% 2% 1% 2%; 
+    border-color: cyan;
+}
+
+::placeholder{
+    color:black;
+    font-weight: bold;
+} 
+
+#uid{
+    position: absolute;
+    top:40%;
+    left:36%;
+}
+
+#name{
+    position: absolute;
+    top:30%;
+    left:40%
+}
+
+#age{
+    position: absolute;
+    top:40%;
+    left:40%
+}
+
+#aad{
+    position: absolute;
+    top:50%;
+    left:40%
+}
+
+#phone{
+    position: absolute;
+    top:60%;
+    left:40%
+}
+
+#otp{
+    position: absolute; 
+    top:73%;
+    left:44%;
+    background-color:rgba(18,18,230,0.836);
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+} 
+
+#submit{
+    background-color: rgba(18,18,230,0.836);
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top:75%;
+    left:38.5%;
+    padding:1%;
+}
+
+
+button:hover{
+    transform: scale(1.2);
+} 
+
+#otp{
+    left:34.5%; 
+    top:55%; 
+    padding:0%;
+}
+
+#log{
+    position:absolute;
+    top:25%;
+    left:40%;
+}
+

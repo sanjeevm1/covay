@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>SignUp</title>
+</head>
+<body>
+    <div id="header">
+        <span id="head">Covaxy</span>
+        <a id="home" href="http://localhost:3000/home">Home</a>
+        <a id="about" href="http://localhost:3000/about">About Us</a> 
+        <a id="contact" href="http://localhost:3000/contact">Contact Us</a> 
+        <a id="terms" href="http://localhost:3000/terms">Terms and Condition</a>
+        </div> 
+    <div id="signed">
+        <input type="text" name="name" id="name" placeholder="Name"/><br/><br/>
+        <input type="number" name="age" id="age" placeholder="Age"/><br/><br/>
+        <input type="text" name="aAdhar" id="aad" placeholder="Aadhar-ID"/><br/><br/>
+        <input type="text" name="phone" id="phone" placeholder="Phone"/><br/><br/>
+        <button id="submit" type="submit" value="SignUp" onclick="send()">Sign Up</button> 
+    </div> 
+
+    <div id="log" style="display:none">
+        <h3 style="color:white;font-weight:bold;">SignUp Successfull , click below to login</h3>
+        <a href="http://localhost:3000/login"><button>Login</button></a>
+    </div>
+<script type="text/javascript">
+ 
+ function send(){
+ var o=new XMLHttpRequest(); 
+ var name=document.getElementById("name").value;
+ var age=document.getElementById("age").value;
+ var aAdhar=document.getElementById("aad").value;
+ var phone=document.getElementById("phone").value;
+
+ o.onload=()=>{
+       if(Number(o.responseText)==1){
+           document.getElementById("signed").style.display='none'; 
+           document.getElementById("log").style.display='block';
+
+       }
+       else{
+           alert(o.responseText);
+       }
+ }
+ o.open("GET",`http://localhost:3000/userdetails?name=${name}&age=${age}&aAdhar=${aAdhar}&phone=${phone}`);
+ o.send();
+
+}
+</script>
+    
+</body>
+</html>
